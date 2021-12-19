@@ -24,7 +24,7 @@ public class AuthenticationThenSearchingAndBookingProductTest {
 
         Thread.sleep(2000);
 
-        authenticate(driver);
+        authenticate(driver, EMAIL_ADDRESS, PASSWORD);
 
         search(driver, SEARCH_KEYWORD);
 
@@ -48,7 +48,7 @@ public class AuthenticationThenSearchingAndBookingProductTest {
         driver.navigate().to(url);
     }
 
-    public static void authenticate(WebDriver driver){
+    public static void authenticate(WebDriver driver, String email, String password){
         // Click on connection trigger
         driver.findElement(By.cssSelector("#_desktop_user_info > div > div > svg")).click();
         driver.findElement(By.cssSelector(".user-down span")).click();
@@ -56,10 +56,10 @@ public class AuthenticationThenSearchingAndBookingProductTest {
         // Enter credentials
         WebElement emailInput = driver.findElement(By.name("email"));
         emailInput.click();
-        emailInput.sendKeys(EMAIL_ADDRESS);
+        emailInput.sendKeys(email);
         WebElement passwordInput = driver.findElement(By.name("password"));
         passwordInput.click();
-        passwordInput.sendKeys(PASSWORD);
+        passwordInput.sendKeys(password);
 
         driver.findElement(By.id("submit-login")).click();
     }
