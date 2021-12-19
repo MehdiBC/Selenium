@@ -59,7 +59,9 @@ public class AuthenticationThenSearchingAndBookingProductTest {
         driver.findElement(By.linkText("PC Portable Apple MacBook Pro M1 13.3\" / 256 Go SSD / Gris Sidéral")).click();
         driver.findElement(By.cssSelector(".add-to-cart")).click();
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector(".btn-block:nth-child(1)")).click();
+        driver.findElement(By.linkText("Commander")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.linkText("Commanderchevron_right")).click();
         Thread.sleep(2000);
 
         driver.quit();
