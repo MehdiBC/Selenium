@@ -42,8 +42,23 @@ It comprises of two parts:
   
 ## WebDriver VS Selenium RC
   -> WebDriver is faster than Selenium RC because it has a simpler achitecture ( WebDriver interacts with the Browser through the operating system )
-  -> 
+  -> WebDriver's API is more concise than Selenium RC's.
+  
+## Selenium Grid
+  Selenium Grid is a tool used together with Selenium RC to run parallel tests across different machines and different browsers all at the same time. 
+  
+
+## Selenium VS QTP
+![image](https://user-images.githubusercontent.com/53980293/147346403-29f54da3-ead3-4561-b8f0-4d8233879400.png)
+![image](https://user-images.githubusercontent.com/53980293/147346463-afea20f1-69fc-477c-afc6-c5602568c25d.png)
 
 
+## Selenium WebDriver API Documentation
+Link: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
 
+First we need to set up the driver binary:
+WebDriverManager.chromedriver().setup();
+
+The driver instance to execute selenium commands:
+WebDriver driver = new WebDriver();
 
