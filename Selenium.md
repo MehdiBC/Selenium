@@ -53,12 +53,55 @@ It comprises of two parts:
 ## Selenium WebDriver API Documentation
 Link: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
 
-First we need to set up the driver binary:\
+### First we need to set up the driver binary:
 `WebDriverManager.chromedriver().setup();`
 
-The driver instance to execute selenium commands:\
+### The driver instance to execute selenium commands:
 `WebDriver driver = new WebDriver();`
 
-Navigation:\
+### Navigation:
 `driver.get(URL_STRING)`\
-`driver.navigate().to(URL)`
+`driver.navigate().to(URL_STRING)`
+
+### Get information on current document:
+`driver.getCurrentUrl()`\
+`driver.getTitle()`
+
+### Forward, Backward and Refresh:
+`driver.forward()`\
+`driver.back()`\
+`driver.refresh()`
+
+### Create and switch to a new window / tab:
+`driver.switchTo().newWindow(WindowType.WINDOW)`\
+`driver.switchTo().newWindow(WindowType.TAB)`
+
+### Close a window:
+`driver.close()`: Closes only the current window. The WebDriver session remains active.\
+`driver.quit()`: Closes all opened windows and ends the WebDriver session.
+
+### Resize window:
+
+
+### Screenshots:
+```
+File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+File elementScreenshotFile = element.getScreenshotAs(OutputType.FILE);
+```
+
+### Javascript:
+```
+JavascriptExecutor js = (JavascriptExecutor)driver;
+WebElement button = driver.findElement(By.id("submit"));
+js.executeScript("argument[0].click();", button); // executing script
+```
+
+### Locating elements:
+`WebElement element = driver.findElement(By.id());` finding one element by id
+`WebElement element = driver.findElements(By.className());` finding elements by class name
+![image](https://user-images.githubusercontent.com/53980293/147493762-5820efa0-6917-4197-9d0d-57ee7784f95d.png)
+`driver.findElement(RelativeLocator.with(By.tagName("input")).above(buttonRecherche)` finding element which is above / near / toLeft or toRight of a referenced element.
+
+## Implicit wait Vs Explicit wait:
+
+
