@@ -13,7 +13,7 @@ Selenium is not just a single tool but a suite of software's, It has four compon
 Selenium Integrated Development Environment (IDE) is the simplest framework in the Selenium suite and is the easiest one to learn.
 
                       Pros                                |                               Cons
-    
+    ---
     + Very easy to use and install                        |           - Designed only for prototypes of tests
     + No programming knowledge is required though         |           - No support for iterations and conditional operations
     knowledge of HTML and DOM is needed                   |           - Test execution is slow compared to WebDriver and Selenium RC
@@ -25,27 +25,27 @@ Selenium Integrated Development Environment (IDE) is the simplest framework in t
     
     
 ## Selenium WebDriver
-WebDriver is a web automation framework.
+**WebDriver** is a web automation framework.
 It allows you to execute your tests against different browsers using a programming language. You can now perform iterations and conditional operations.
 
-  -> It controls the browser from the OS level
-  -> You can use different programming languages
-  -> Testing web applications across different browsers
+  - It controls the browser from the OS level
+  - You can use different programming languages
+  - Testing web applications across different browsers
   
  * Read more on the WebDriver architecture: https://www.browserstack.com/guide/selenium-webdriver-tutorial
 
 ## Selenium RC
-Selenium RC is a test automation tool supporting different programming languages.
+**Selenium RC** is a test automation tool supporting different programming languages.
 It comprises of two parts: 
-  + Client libraries for the prefered computer language
-  + Server that launches and kills browsers automatically
+  - Client libraries for the prefered computer language
+  - Server that launches and kills browsers automatically
   
 ## WebDriver VS Selenium RC
-  -> WebDriver is faster than Selenium RC because it has a simpler achitecture ( WebDriver interacts with the Browser through the operating system )
-  -> WebDriver's API is more concise than Selenium RC's.
+  - WebDriver is faster than Selenium RC because it has a simpler achitecture ( WebDriver interacts with the Browser through the operating system )
+  - WebDriver's API is more concise than Selenium RC's.
   
 ## Selenium Grid
-  Selenium Grid is a tool used together with Selenium RC to run parallel tests across different machines and different browsers all at the same time. 
+  **Selenium Grid** is a tool used together with Selenium RC to run parallel tests across different machines and different browsers all at the same time. 
   
 
 ## Selenium VS QTP
