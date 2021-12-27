@@ -53,9 +53,12 @@ It comprises of two parts:
 ## Selenium WebDriver API Documentation
 Link: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
 
-First we need to set up the driver binary:
+First we need to set up the driver binary:\
 `WebDriverManager.chromedriver().setup();`
 
-The driver instance to execute selenium commands:
+The driver instance to execute selenium commands:\
 `WebDriver driver = new WebDriver();`
 
+Navigation:\
+`driver.get(URL_STRING)`\
+`driver.navigate().to(URL)`
