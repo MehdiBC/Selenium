@@ -16,7 +16,7 @@ Selenium Integrated Development Environment (IDE) is the simplest framework in t
   | ------------------------------------------------------ | ------------------------------------------------------------------ |
   | + Very easy to use and install                         |     - Designed only for prototypes of tests                        | 
   | + No programming knowledge is required though knowledge of HTML and DOM is needed         |     - No support for iterations and conditional operations         | 
-  | + Can export tests to formats to be used by WebDriver and Selenium RC    |     - Test execution is slow compared to WebDriver and Selenium RC                                                                                            
+  | + Can export tests to formats to be used by WebDriver and Selenium RC    |     - Test execution is slow compared to WebDriver and Selenium RC                  |                                                                           
   | + Generates reports of tests results                   |                                                                    |
   | + Provides support for extensions                      |                                                                    |     
 
@@ -97,11 +97,35 @@ js.executeScript("argument[0].click();", button); // executing script
 ```
 
 ### Locating elements:
-`WebElement element = driver.findElement(By.id());` finding one element by id
-`WebElement element = driver.findElements(By.className());` finding elements by class name
+```
+try {
+  WebElement element = driver.findElement(By.id()); // finding one element by id.
+} catch(NoSuchElementException nse) {
+  nse.printStackTrace();
+}
+```
+```
+List<WebElement> elements = driver.findElements(By.className()); // finding elements by class name.
+```
 ![image](https://user-images.githubusercontent.com/53980293/147493762-5820efa0-6917-4197-9d0d-57ee7784f95d.png)
 `driver.findElement(RelativeLocator.with(By.tagName("input")).above(buttonRecherche)` finding element which is above / near / toLeft or toRight of a referenced element.
 
 ## Implicit wait Vs Explicit wait:
+### Implicit wait:
+Implicit Wait directs the Selenium WebDriver to wait for a certain measure of time before throwing an exception. Once this time is set, WebDriver will wait for the element before the exception occurs.\
+Once the command is in place, Implicit Wait stays in place for the entire duration for which the browser is open. It’s default setting is 0, and the specific wait time needs to be set by the following protocol.\
+`driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);`
+
+### Explicit wait:
+By using the Explicit Wait command, the WebDriver is directed to wait until a certain condition occurs before proceeding with executing the code.\
+```
+WebDriverWait waitVar = new WebDriverWait(driver, TIMEOUT);
+try {
+  waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+  driver.findElement(By.id("username")).sendKeys("Mehdi");
+} catch(TimeoutException timeoutException) {
+  timeoutException.printStackTrace();
+}
+```
 
 
