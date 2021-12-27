@@ -15,10 +15,8 @@ Selenium Integrated Development Environment (IDE) is the simplest framework in t
   |                       Pros                             |                                Cons                                |
   | ------------------------------------------------------ | ------------------------------------------------------------------ |
   | + Very easy to use and install                         |     - Designed only for prototypes of tests                        | 
-  | + No programming knowledge is required though          |     - No support for iterations and conditional operations         | 
-    knowledge of HTML and DOM is needed                    |     
-  | + Can export tests to formats to be used by            |     - Test execution is slow compared to WebDriver and Selenium RC           
-    WebDriver and Selenium RC                                                                                   
+  | + No programming knowledge is required though knowledge of HTML and DOM is needed         |     - No support for iterations and conditional operations         | 
+  | + Can export tests to formats to be used by WebDriver and Selenium RC    |     - Test execution is slow compared to WebDriver and Selenium RC                                                                                            
   | + Generates reports of tests results                   |                                                                    |
   | + Provides support for extensions                      |                                                                    |     
 
