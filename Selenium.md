@@ -12,15 +12,15 @@ Selenium is not just a single tool but a suite of software's, It has four compon
 ## Selenium IDE:
 Selenium Integrated Development Environment (IDE) is the simplest framework in the Selenium suite and is the easiest one to learn.
 
-    |                  Pros                                |                               Cons                                |
-    |------------------------------------------------------|-------------------------------------------------------------------|
-    |+ Very easy to use and install                        |     - Designed only for prototypes of tests                       | 
-    |+ No programming knowledge is required though         |     - No support for iterations and conditional operations        | 
-    |knowledge of HTML and DOM is needed                   |     - Test execution is slow compared to WebDriver and Selenium RC|
-    |+ Can export tests to formats to be used by           |                                                                   | 
-    |WebDriver and Selenium RC                             |                                                                   |
-    |+ Generates reports of tests results                  |                                                                   |
-    |+ Provides support for extensions                     |                                                                   |     
+    |                   Pros                                 |                               Cons                                 |
+    | ------------------------------------------------------ | ------------------------------------------------------------------ |
+    | + Very easy to use and install                         |     - Designed only for prototypes of tests                        | 
+    | + No programming knowledge is required though          |     - No support for iterations and conditional operations         | 
+    | knowledge of HTML and DOM is needed                    |     - Test execution is slow compared to WebDriver and Selenium RC |
+    | + Can export tests to formats to be used by            |                                                                    | 
+    | WebDriver and Selenium RC                              |                                                                    |
+    | + Generates reports of tests results                   |                                                                    |
+    | + Provides support for extensions                      |                                                                    |     
     
     
     
