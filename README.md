@@ -32,11 +32,11 @@ It allows you to execute your tests against different browsers using a programmi
 Read more on the WebDriver architecture: https://www.browserstack.com/guide/selenium-webdriver-tutorial
 
 ## Selenium RC
-**Selenium RC** is a test automation tool supporting different programming languages.
+**Selenium RC** (*Depricated from selenium 3.0*) is a test automation tool supporting different programming languages.
 It comprises of two parts: 
   - Client libraries for the prefered computer language
   - Server that launches and kills browsers automatically
-  
+
 ## WebDriver VS Selenium RC
   - WebDriver is faster than Selenium RC because it has a simpler achitecture ( WebDriver interacts with the Browser through the operating system )
   - WebDriver's API is more concise than Selenium RC's.
@@ -81,7 +81,12 @@ Link: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/WebDri
 `driver.quit()`: Closes all opened windows and ends the WebDriver session.
 
 ### Resize window:
-
+```
+driver.manage().window().minimize();
+driver.manage().window().maximize();
+driver.manage().getSize().getHeight(); 
+driver.manage().getSize().getWidth();
+```
 
 ### Screenshots:
 ```
@@ -105,7 +110,8 @@ try {
 }
 ```
 ```
-List<WebElement> elements = driver.findElements(By.className()); // finding elements by class name.
+List<WebElement> elements = driver.findElements(By.className()); 
+// finding elements by class name. findElements returns an empty list object if elements not found.
 ```
 ![image](https://user-images.githubusercontent.com/53980293/147493762-5820efa0-6917-4197-9d0d-57ee7784f95d.png)
 `driver.findElement(RelativeLocator.with(By.tagName("input")).above(buttonRecherche)` finding element which is above / near / toLeft or toRight of a referenced element.
