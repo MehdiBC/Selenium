@@ -113,11 +113,11 @@ List<WebElement> elements = driver.findElements(By.className()); // finding elem
 ## Implicit wait Vs Explicit wait:
 ### Implicit wait:
 Implicit Wait directs the Selenium WebDriver to wait for a certain measure of time before throwing an exception. Once this time is set, WebDriver will wait for the element before the exception occurs.\
-Once the command is in place, Implicit Wait stays in place for the entire duration for which the browser is open. It’s default setting is 0, and the specific wait time needs to be set by the following protocol.\
-`driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);`
+Once the command is in place, Implicit Wait stays in place for the entire duration for which the browser is open. It’s default setting is 0, and the specific wait time needs to be set by the following protocol.
+```driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));```
 
 ### Explicit wait:
-By using the Explicit Wait command, the WebDriver is directed to wait until a certain condition occurs before proceeding with executing the code.\
+By using the Explicit Wait command, the WebDriver is directed to wait until a certain condition occurs before proceeding with executing the code.
 ```
 WebDriverWait waitVar = new WebDriverWait(driver, TIMEOUT);
 try {
