@@ -130,4 +130,4 @@ try {
 }
 ```
 
-
+Reference https://www.browserstack.com/guide/wait-commands-in-selenium-webdriver
