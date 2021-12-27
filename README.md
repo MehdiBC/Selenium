@@ -42,7 +42,7 @@ It comprises of two parts:
   - WebDriver's API is more concise than Selenium RC's.
   
 ## Selenium Grid
-  **Selenium Grid** is a tool used together with Selenium RC to run parallel tests across different machines and different browsers all at the same time. 
+  **Selenium Grid** is a tool used to run parallel tests across different machines and different browsers all at the same time. 
   
 
 ## Selenium VS QTP
