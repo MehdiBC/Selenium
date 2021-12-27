@@ -11,7 +11,6 @@ Selenium is not just a single tool but a suite of software's, It has four compon
   
 ## Selenium IDE:
 Selenium Integrated Development Environment (IDE) is the simplest framework in the Selenium suite and is the easiest one to learn.
-
     |                   Pros                                 |                               Cons                                 |
     | ------------------------------------------------------ | ------------------------------------------------------------------ |
     | + Very easy to use and install                         |     - Designed only for prototypes of tests                        | 
