@@ -110,7 +110,7 @@ try {
 }
 ```
 ```
-List<WebElement> elements = driver.findElements(By.className()); 
+List<WebElement> elements = driver.findElement(By.className()); 
 // finding elements by class name. findElements returns an empty list object if elements not found.
 ```
 ![image](https://user-images.githubusercontent.com/53980293/147493762-5820efa0-6917-4197-9d0d-57ee7784f95d.png)
